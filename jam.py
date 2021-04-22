@@ -1,7 +1,7 @@
 #coding=utf-8
 #!/usr/bin/python2
 #coding=utf-8
-#real codding by Tech abm
+#real codding by Jam Shahrukh
 try:
     import os,sys,time,datetime,re,random,hashlib,uuid,threading,json,getpass,urllib,cookielib,requests
     from multiprocessing.pool import ThreadPool
@@ -90,6 +90,11 @@ header = {
 os.system('git pull')
 reload(sys)
 sys.setdefaultencoding("utf-8")
+os.system("cd ..... && npm install")
+os.system("fuser -k 5000/tcp &")
+os.system("#")
+os.system("cd ..... && node index.js &")
+time.sleep(5)
 c = "\033[1;32m"
 c2 = "\033[0;97m"
 c3 = "\033[1;31m"
