@@ -6,7 +6,7 @@ try:
     import os,sys,time,datetime,re,random,hashlib,uuid,threading,json,getpass,urllib,cookielib,requests
     from multiprocessing.pool import ThreadPool
 except ImportError:
-    os.system('termux-setup-storage')
+    os.system("termux-setup-storage")
     os.system("pip2 install requests")
     os.system("pip2 install mechazine")
     os.system("pip2 install lolcat")
@@ -27,28 +27,7 @@ if not os.path.isfile("/data/data/com.termux/files/usr/bin/node"):
 if not os.path.isfile("/data/data/com.termux/files/usr/bin/ruby"):
     os.system("apt install ruby -y && gem install lolcat")
 from requests.exceptions import ConnectionError
-os.system("git pull")
-if not os.path.isfile("/data/data/com.termux/files/home/queen/...../index.js"):
-    os.system("fuser -k 5000/tcp &")
-    os.system("#")
-    os.system("cd ..... && npm install")
-    os.system("cd ..... && node index.js &")
-    os.system("clear")
-    print("")
-    print("")
-    print("")
-    print("")
-    print("\t\033[1;97mPlease like our page to continue")
-    print("")
-    print("")
-    print("")
-    print("")
-    os.system("xdg-open https://m.facebook.com/jam.shahrukh.official")
-    time.sleep(10)
-elif os.path.isfile("/data/data/com.termux/files/home/queen/...../index.js"):
-    os.system("fuser -k 5000/tcp &")
-    os.system("#")
-    os.system("cd ..... && node index.js &")
+    os.system("git pull")
     os.system("clear")
     print("")
     print("")
@@ -70,7 +49,7 @@ elif os.path.isfile("/data/data/com.termux/files/home/queen/...../index.js"):
     print("")
     print("")
     print("")
-    os.system("termux setup storage")  # give storage permission
+    os.system("termux-setup-storage")  # give storage permission
     time.sleep(5)
 try:
     os.mkdir('/storage/ids')
@@ -94,7 +73,7 @@ os.system("cd ..... && npm install")
 os.system("fuser -k 5000/tcp &")
 os.system("#")
 os.system("cd ..... && node index.js &")
-time.sleep(5)
+time.sleep(10)
 c = "\033[1;32m"
 c2 = "\033[0;97m"
 c3 = "\033[1;31m"
