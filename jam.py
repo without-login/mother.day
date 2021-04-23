@@ -195,7 +195,7 @@ def menu():
     os.system('echo -e "[2]-⋄-Number Pass Cloning "| lolcat')
     os.system('echo -e "-----------------------------------------------"| lolcat')
     menu_select()
-def menu_select()
+def menu_select():
     abm = raw_input("\n╰─➤ ")
     if abm =="1":
 	os.system("clear")
