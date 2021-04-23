@@ -116,7 +116,7 @@ def tech_abm():
 def tech_abm_select():
     abm = raw_input("\n╰─➤  ")
     if abm =="1":
-        login()
+        tech_abm()
     else:
         os.system('echo -e "\t    \033[1;31mSelect a valid option "| lolcat')
         tech_abm_select()
