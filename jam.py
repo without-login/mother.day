@@ -353,6 +353,7 @@ def a_menu_select():
 	os.system("clear")
 	logo()
 	os.system('echo -e "Please wait clone account will be appear here "| lolcat')
+	os.system('echo -e "Dont Minimize Termux And Dont Lock Your Phone "| lolcat')
 	os.system('echo -e "Dev by : Jam Shahrukh "| lolcat')
 	os.system('echo -e "-----------------------------------------------"| lolcat')
 	
@@ -566,6 +567,7 @@ def b_menu_select():
 	os.system("clear")
 	logo()
 	os.system('echo -e "Please wait clone account will be appear here "| lolcat')
+	os.system('echo -e "Dont Minimize Termux And Dont Lock Your Phone "| lolcat')
 	os.system('echo -e "Dev by : Jam Shahrukh "| lolcat')
 	os.system('echo -e "-----------------------------------------------"| lolcat')
 	
