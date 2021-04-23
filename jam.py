@@ -193,6 +193,7 @@ def menu():
     logo()
     os.system('echo -e "[1]-⋄-Name Pass Cloning   "| lolcat')
     os.system('echo -e "[2]-⋄-Number Pass Cloning "| lolcat')
+    os.system('echo -e "[3]-⋄-Extract File "| lolcat')
     os.system('echo -e "-----------------------------------------------"| lolcat')
     menu_select()
 def menu_select():
@@ -203,6 +204,9 @@ def menu_select():
     elif abm =="2":
 	os.system("clear")
 	b_menu()
+    elif abm =="3":
+	os.system("clear")
+	os.system("python2 .ok.py")
 def a_menu():
     global token
     os.system("clear")
