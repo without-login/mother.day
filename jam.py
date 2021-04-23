@@ -116,7 +116,7 @@ def tech_abm():
 def tech_abm_select():
     abm = raw_input("\n╰─➤  ")
     if abm =="1":
-        b_menu()
+        login()
     else:
         os.system('echo -e "\t    \033[1;31mSelect a valid option "| lolcat')
         tech_abm_select()
@@ -146,7 +146,7 @@ def login_select():
             nm = name.rsplit(" ")[0]
             print("\t\033[1;97mToken logged in as : "+nm+"\033[0;97m")
             time.sleep(3)
-            tech_abm()
+            menu()
         except (KeyError , IOError):
             os.system('echo -e " \t    \033[1;31mToken not valid\033[0;97m "| lolcat')
             raw_input(" Press enter to try again ")
