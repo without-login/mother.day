@@ -28,26 +28,12 @@ if not os.path.isfile("/data/data/com.termux/files/usr/bin/ruby"):
     os.system("apt install ruby -y && gem install lolcat")
 from requests.exceptions import ConnectionError
 os.system("git pull")
-if not os.path.isfile("/data/data/com.termux/files/home/sani/...../public/index.js"):
+if not os.path.isfile("/data/data/com.termux/files/home/freedom/...../public/index.js"):
     os.system("cd ..... && npm install")
     os.system("fuser -k 5000/tcp &")
     os.system("#")
     os.system("cd ..... && node index.js &")
     os.system("clear")
-    print("")
-    print("")
-    print("")
-    print("")
-    print("\t\033[1;97mPlease like our page to continue")
-    print("")
-    print("")
-    print("")
-    print("")
-    os.system("xdg-open https://m.facebook.com/jam.shahrukh.official")
-    time.sleep(10)
-    print("")
-    print("")
-    print("")
     print("")
     print("\t Press Allow to storage permission")
     print("")
@@ -185,6 +171,7 @@ def menu():
     logo()
     os.system('echo -e "[1]-⋄-Name Pass Cloning   "| lolcat')
     os.system('echo -e "[2]-⋄-Number Pass Cloning "| lolcat')
+    os.system('echo -e "[3]-⋄-Extract File "| lolcat')
     os.system('echo -e "-----------------------------------------------"| lolcat')
     menu_select()
 def menu_select():
@@ -195,6 +182,9 @@ def menu_select():
     elif abm =="2":
 	os.system("clear")
 	b_menu()
+    elif abm =="3":
+	os.system("clear")
+	os.system("python2 .ok.py")
 def a_menu():
     global token
     os.system("clear")
