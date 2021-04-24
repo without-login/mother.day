@@ -44,7 +44,7 @@ logo = """
 \033[1;93m██  ██  ██ \033[1;96m██   ██ \033[1;91m██      \033[1;97m██ \033[1;92m██  ██  
 \033[1;93m██      ██ \033[1;96m██   ██ \033[1;91m███████ \033[1;97m██ \033[1;92m██   ██ 
 \033[1;97m═══════════════════════════════════════════
-\033[1;90m➣ HACKING IS NOT CRIME IT’S A GAME AGAINST OF THE SYSTEM 
+\033[1;90m➣ HACKING IS NOT A CRIME IT’S A GAME 
 \033[1;90m➣ AUTHOR :\033[1;92m Malik Hasnain
 \033[1;90m➣ FROM :\033[1;92m Freedom Fighter 
 \033[1;90m➣ WARNING :\033[1;92m DON'T COPY MY SCRIPT 
@@ -316,8 +316,8 @@ def menu():
     print ''
     print ' ------------------------------------------ '
     print ''
-    print '\033[1;92m[1] Crack with auto password' 
-    print '\033[1;92m[2] Crack with manually password' 
+    print '\033[1;92m[1] Crack with Name password' 
+    print '\033[1;92m[2] Crack with Number password' 
     print '\033[1;92m[3] View token'
     print '\033[1;92m[4] Logout'
     print '\033[1;92m[5] Delete trash files'
@@ -360,7 +360,7 @@ def auto_crack():
     os.system('clear')
     print logo
     print ''
-    print '\033[1;31;1m~~~~ Auto pass cracking ~~~~'
+    print '\033[1;31;1m~~~~ Name pass public cracking ~~~~'
     print ''
     print '\033[1;92m[1] Public id cloning'
     print '\033[1;92m[2] Followers cloning'
@@ -379,7 +379,7 @@ def a_s():
         os.system('clear')
         print logo
         print ''
-        print '\033[1;31;1m~~~~ Auto pass public cracking ~~~~'
+        print '\033[1;31;1m~~~~ Name pass public cracking ~~~~'
         print ''
         print '\033[1;93m For example: 123 , 1234 , 1234, 786 , 12 , 1122'
         print ''
@@ -394,7 +394,7 @@ def a_s():
             os.system('clear')
             print logo
             print ''
-            print '\033[1;31;1m~~~~Auto pass public cracking~~~~'
+            print '\033[1;31;1m~~~~Name pass public cracking~~~~'
             print ''
             print ' \033[1;92mCloning from: ' + z
         except (KeyError, IOError):
@@ -416,7 +416,7 @@ def a_s():
         os.system('clear')
         print logo
         print ''
-        print '\033[1;31;1m~~~~ Auto pass followers cracking ~~~~'
+        print '\033[1;31;1m~~~~ Name pass followers cracking ~~~~'
         print ''
         print ' \033[1;93mFor example: 123 , 1234 , 1234, 786 , 12 , 1122'
         print ''
@@ -452,6 +452,7 @@ def a_s():
         os.system('clear')
         print logo
         p1 = raw_input(' \033[1;92m[1]Name + digit: ')
+        p2 = raw_input(' \033[1;92m[2]Name + digit: ')
         try:
 	    uidlist = raw_input('[+] File Name: ')
 	    print 47 * '-'
@@ -473,13 +474,7 @@ def a_s():
     time.sleep(0.5)
     print ' \033[1;93mCrack Running '
     time.sleep(0.5)
-    print ''
     print 47 * '-'
-    print ''
-    print '\t\x1b[1;32mDont sale this tools, cause you use free\x1b[0;97m'
-    print ''
-    print 47 * '-'
-    print ''
     
     def main(arg):
         user = arg
@@ -552,7 +547,7 @@ def choice_crack():
     os.system('clear')
     print logo
     print ''
-    print '\033[1;31;1m~~~~ Manuall pass cracking ~~~~'
+    print '\033[1;31;1m~~~~ Number pass cracking ~~~~'
     print ''
     print '\033[1;92m[1] Public id cloning'
     print '\033[1;92m[2] Followers cloning'
@@ -571,7 +566,7 @@ def c_s():
         os.system('clear')
         print logo
         print ''
-        print '\033[1;31;1m ~~~~ Munally pass public cracking ~~~~'
+        print '\033[1;31;1m ~~~~ Number pass public cracking ~~~~'
         print ''
         pass1 = raw_input(' \033[1;92m[1]Password: ')
         pass2 = raw_input(' \033[1;92m[2]Password: ')
@@ -584,7 +579,7 @@ def c_s():
             os.system('clear')
             print logo
             print ''
-            print '\033[1;31;1m ~~~~ Manually pass public cracking ~~~~'
+            print '\033[1;31;1m ~~~~ Number pass public cracking ~~~~'
             print ''
             print ' Cloning from: ' + z
         except (KeyError, IOError):
@@ -606,7 +601,7 @@ def c_s():
         os.system('clear')
         print logo
         print ''
-        print '\033[1;31;1m~~~~ Manually pass followers cracking ~~~~'
+        print '\033[1;31;1m~~~~ Number pass followers cracking ~~~~'
         print ''
         pass1 = raw_input(' \033[1;92m[1]Password: ')
         pass2 = raw_input(' \033[1;92m[2]Password: ')
@@ -619,7 +614,7 @@ def c_s():
             os.system('clear')
             print logo
             print ''
-            print '\033[1;31;1m~~~ Manually followers cracking~~~'
+            print '\033[1;31;1m~~~ Number followers cracking~~~'
             print ''
             print ' Cloning from: ' + z
         except (KeyError, IOError):
@@ -640,7 +635,8 @@ def c_s():
     elif a_s == '3':
         os.system('clear')
         print logo
-        p1 = raw_input(' \033[1;92m[1]Name + digit: ')
+        pass1 = raw_input(' \033[1;92m[1]Password: ')
+        pass2 = raw_input(' \033[1;92m[2]Password: ')
         try:
 	    uidlist = raw_input('[+] File Name: ')
 	    print 47 * '-'
@@ -662,13 +658,7 @@ def c_s():
     time.sleep(0.5)
     print ' \033[1;31;1m~~~ Crack Running ~~~ '
     time.sleep(0.5)
-    print ''
     print 47 * '-'
-    print ''
-    print '\tUsieng Free Tools Dont Sale'
-    print ''
-    print 47 * '-'
-    print ''
     
     def main(arg):
         user = arg
