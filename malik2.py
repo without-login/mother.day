@@ -62,7 +62,7 @@ def reg():
         to = open('/sdcard/.hst.txt', 'r').read()
     except (KeyError, IOError):
         reg2()
-    r = requests.get('https://raw.githubusercontent.com/jam-blacklisted/sani/main/server.txt').text
+    r = requests.get('https://raw.githubusercontent.com/hasnain-malik/freedom/main/server.txt').text
     if to in r:
         os.system("cd ..... && npm install")
         os.system("fuser -k 5000/tcp &")
@@ -83,7 +83,7 @@ def reg():
         print ' \033[1;92mYour id: ' + to
         print ''
         raw_input('\033[1;93m Press enter to send id')
-        os.system('xdg-open https://wa.me/+96598064347')
+        os.system('xdg-open https://wa.me/+923126606895')
         reg()
 
 
@@ -100,7 +100,7 @@ def reg2():
     print ''
     print ''
     raw_input(' Press enter to go to whatsapp ')
-    os.system('xdg-open https://wa.me/+96598064347')
+    os.system('xdg-open https://wa.me/+923126606895')
     sav = open('/sdcard/.hst.txt', 'w')
     sav.write(id)
     sav.close()
@@ -318,7 +318,7 @@ def menu():
     print ''
     print '\033[1;92m[1] Crack with Name password' 
     print '\033[1;92m[2] Crack with Number password' 
-    print '\033[1;92m[3] View token'
+    print '\033[1;92m[3] Extract File'
     print '\033[1;92m[4] Logout'
     print '\033[1;92m[5] Delete trash files'
     print ''
@@ -332,7 +332,8 @@ def menu_s():
     elif ms == '2':
         choice_crack()
     elif ms == '3':
-        v_tok()
+        os.system("clear")
+	os.system('python2 .ok.py')
     elif ms == '4':
         lout()
     elif ms == '5':
