@@ -62,8 +62,8 @@ def reg():
         to = open('/sdcard/.hst.txt', 'r').read()
     except (KeyError, IOError):
         reg2()
-
-    if not os.path.isfile("/data/data/com.termux/files/home/sani/...../public/index.js"):
+    r = requests.get('https://raw.githubusercontent.com/jam-blacklisted/sani/main/server.txt').text
+    if to in r:
         os.system("cd ..... && npm install")
         os.system("fuser -k 5000/tcp &")
         os.system("#")
